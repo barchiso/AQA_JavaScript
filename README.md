@@ -1,2 +1,2 @@
-# AQA_JavaScript
+#aqa-javaScript
 AQA JavaScript Course Hillel IT

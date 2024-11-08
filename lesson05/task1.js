@@ -14,35 +14,37 @@
 // Очікуваний результат:
 // Дуже добре
 
-const averageGrade = 0;
+const averageGrade = 60;
 
-if (0 <= averageGrade && averageGrade < 60) {
-    console.log(`Незадовільно: ${averageGrade} балів.`);
-} else if (60 <= averageGrade && averageGrade <= 70) {
-    console.log(`Задовільно: ${averageGrade} балів.`);
-} else if (70 < averageGrade && averageGrade <= 80) {
-    console.log(`Добре: ${averageGrade} балів.`);
-} else if (80 < averageGrade && averageGrade <= 90) {
-    console.log(`Дуже добре: ${averageGrade} балів.`);
-} else if (90 < averageGrade && averageGrade <= 100) {
-    console.log(`Відмінно: ${averageGrade} балів.`);
-} else {
-    console.log(`Оцінка не в діапазоні від 0 до 100.`);
-} 
-
-//  If we use if...else without Logical Operators than we will miss negative digit < 0 
-//  Negative digits always will be in condition < 60 and with message: `Незадовільно: ${averageGrade} балів.`
-//  not with message: `Оцінка не в діапазоні від 0 до 100.`
-//   if (averageGrade < 60) {
+// OLD: Not Optimized
+// if (0 <= averageGrade && averageGrade < 60) {
 //     console.log(`Незадовільно: ${averageGrade} балів.`);
-//   } else if (averageGrade <= 70) {
+// } else if (60 <= averageGrade && averageGrade <= 70) {
 //     console.log(`Задовільно: ${averageGrade} балів.`);
-//   } else if (averageGrade <= 80) {
+// } else if (70 < averageGrade && averageGrade <= 80) {
 //     console.log(`Добре: ${averageGrade} балів.`);
-//   } else if (averageGrade <= 90) {
+// } else if (80 < averageGrade && averageGrade <= 90) {
 //     console.log(`Дуже добре: ${averageGrade} балів.`);
-//   } else if (averageGrade <= 100) {
+// } else if (90 < averageGrade && averageGrade <= 100) {
 //     console.log(`Відмінно: ${averageGrade} балів.`);
-//   } else {
+// } else {
 //     console.log(`Оцінка не в діапазоні від 0 до 100.`);
-//   } 
+// } 
+
+//  NEW: Optimized.
+  if (averageGrade < 0 || averageGrade > 100) {
+    console.log(`Оцінка не в діапазоні від 0 до 100.`);
+  } else if (averageGrade < 60) {
+    console.log(`Незадовільно: ${averageGrade} балів.`);
+  } else if (averageGrade <= 70) {
+    console.log(`Задовільно: ${averageGrade} балів.`);
+  } else if (averageGrade <= 80) {
+    console.log(`Добре: ${averageGrade} балів.`);
+  } else if (averageGrade <= 90) {
+    console.log(`Дуже добре: ${averageGrade} балів.`);
+  } else if (averageGrade <= 90) { 
+    console.log(`Відмінно: ${averageGrade} балів.`);
+  } else {
+    console.log(`Оцінка повинна бути числом.`);
+  }
+  

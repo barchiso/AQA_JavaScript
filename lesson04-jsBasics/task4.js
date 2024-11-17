@@ -7,9 +7,9 @@
 
 const piNumber = Math.PI;
 let circleRadius = 5;
-let circleSquare = (piNumber * (circleRadius ** 2)).toFixed(2);
+let circleSquare = (piNumber * circleRadius ** 2).toFixed(2);
 
-console.log(`Circle square equals: ${circleSquare}`);   // Press Fn+Esc on keyboard to enter ` symbol.
+console.log(`Circle square equals: ${circleSquare}`); // Press Fn+Esc on keyboard to enter ` symbol.
 
 // Завдання 4.2 Rectangle Square.
 // Створіть змінну length і присвойте їй числове значення довжини прямокутника.
@@ -20,7 +20,7 @@ let rectangleLength = 3;
 let rectangleWidth = 9;
 let rectangleSquare = (rectangleLength * rectangleWidth).toFixed(2);
 
-console.log(`Rectangle square equals: ${rectangleSquare}`);  // Press Fn+Esc on keyboard to enter ` symbol.
+console.log(`Rectangle square equals: ${rectangleSquare}`); // Press Fn+Esc on keyboard to enter ` symbol.
 
 // Завдання 4.3 Cylinder Volume.
 // Створіть змінну radius і присвойте їй числове значення радіуса циліндра.
@@ -30,6 +30,8 @@ console.log(`Rectangle square equals: ${rectangleSquare}`);  // Press Fn+Esc on 
 
 let cylinderRadius = 5;
 let cylinderHeight = 4;
-let cylinderVolume = (piNumber * (cylinderRadius ** 2) * cylinderHeight).toFixed(2);
+let cylinderVolume = (piNumber * cylinderRadius ** 2 * cylinderHeight).toFixed(
+  2
+);
 
-console.log(`Cylinder volume equals: ${cylinderVolume}`);   // Press Fn+Esc on keyboard to enter ` symbol.
+console.log(`Cylinder volume equals: ${cylinderVolume}`); // Press Fn+Esc on keyboard to enter ` symbol.

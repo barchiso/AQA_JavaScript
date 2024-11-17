@@ -5,8 +5,8 @@
 //  4. Викличте вашу функцію з аргументами 25 і 15, і виведіть результат (чи є особа дорослою) в консоль для кожного випадку.
 
 //  Using function declaration.
-function isAdult (age) {
-    return  age >= 18;
+function isAdult(age) {
+  return age >= 18;
 }
 
 console.log(isAdult(25));
@@ -16,8 +16,8 @@ console.log(isAdult(17.5));
 
 //  Using function expression.
 const isAdultExpression = function(age) {
-    return age >= 18;
-}
+  return age >= 18;
+};
 
 console.log(isAdultExpression(25));
 console.log(isAdultExpression(15));
@@ -25,7 +25,7 @@ console.log(isAdultExpression(18));
 console.log(isAdultExpression(17.5));
 
 //  Better optimized for this function use Arrow function.
-const isAdultArrow = (age) => age >= 18;
+const isAdultArrow = age => age >= 18;
 
 console.log(isAdultArrow(25));
 console.log(isAdultArrow(15));

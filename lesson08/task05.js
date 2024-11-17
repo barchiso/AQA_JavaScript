@@ -6,9 +6,9 @@
 //  3. Виведіть отриманий об'єднаний масив на консоль.
 
 //  Create function to  concatenate two arrays into one.
-const concatArrays = (firstArray,  secondArray) => {
-    return firstArray.concat(secondArray);
-}
+const concatArrays = (firstArray, secondArray) => {
+  return firstArray.concat(secondArray);
+};
 
 const children = ["Cecile", "Lone", "Emil", "Tobias", "Linus"];
 const fruits = ["Banana", "Orange", "Apple", "Mango"];

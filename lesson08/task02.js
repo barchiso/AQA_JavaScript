@@ -6,15 +6,14 @@
 //  3. Виведіть новий масив на консоль.
 
 // Create function to create new array with mutation
-const arrayMutation = (numbers) => {
-    return numbers.map((number, index) => number * index);
-    // let newNumbers = [];
-    // numbers.forEach(number => {
-    //     newNumbers.push(number * numbers.indexOf(number))
-    // });
-    // return newNumbers;
-}
-
+const arrayMutation = numbers => {
+  return numbers.map((number, index) => number * index);
+  // let newNumbers = [];
+  // numbers.forEach(number => {
+  //     newNumbers.push(number * numbers.indexOf(number))
+  // });
+  // return newNumbers;
+};
 
 const numbers = [1, 2, 3, 4, 5];
-console.log(arrayMutation(numbers));  //  [ 0, 2, 6, 12, 20 ]
+console.log(arrayMutation(numbers)); //  [ 0, 2, 6, 12, 20 ]

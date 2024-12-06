@@ -12,29 +12,30 @@
 
 //  Creating function divide with error handling with Try...Catch...Finally block.
 const divide = (numerator, denominator) => {
-  try {
-    //  Function denominator arguments equal 0 check.
-    if (denominator === 0) throw new Error("Dividing to zero is unacceptable!");
-    //  Function arguments check.
-    if (typeof numerator !== "number" || typeof denominator !== "number")
-      throw new Error("Both arguments should be numbers.");
+	try {
+		//  Function denominator arguments equal 0 check.
+		if (denominator === 0)
+			throw new Error('Dividing to zero is unacceptable!');
+		//  Function arguments check.
+		if (typeof numerator !== 'number' || typeof denominator !== 'number')
+			throw new Error('Both arguments should be numbers.');
 
-    //  Display division result.
-    console.log(numerator / denominator);
-  } catch (error) {
-    console.log("Error: " + error.message); //  Error message display.
-  } finally {
-    console.log("Work completed."); //  Final message display.
-  }
+		//  Display division result.
+		console.log(numerator / denominator);
+	} catch (error) {
+		console.log('Error: ' + error.message); //  Error message display.
+	} finally {
+		console.log('Work completed.'); //  Final message display.
+	}
 };
 
 //  Calling function divide with different arguments.
 divide(15, 5); // 3
 divide(0, 5); // 0
 divide(15, 0); // Error: Dividing to zero is unacceptable!
-divide("1=5", 5); // Error: Both arguments should be numbers.
-divide(15, "k5"); // Error: Both arguments should be numbers.
-divide("!5", "05"); // Error: Both arguments should be numbers.
+divide('1=5', 5); // Error: Both arguments should be numbers.
+divide(15, 'k5'); // Error: Both arguments should be numbers.
+divide('!5', '05'); // Error: Both arguments should be numbers.
 divide(0, 0); // Error: Dividing to zero is unacceptable!
 divide(-36, 8); // -4.5
 divide(-36, -8); // 4.5

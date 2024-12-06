@@ -18,53 +18,53 @@
 
 // Class Book.
 export class Book {
-  constructor(name, author, publishYear) {
-    this.bookTitle = name;
-    this.bookAuthor = author;
-    this.bookYear = publishYear;
-  }
+	constructor(name, author, publishYear) {
+		this.bookTitle = name;
+		this.bookAuthor = author;
+		this.bookYear = publishYear;
+	}
 
-  // getter and setter for book title.
-  get name() {
-    return this.bookTitle;
-  }
+	// getter and setter for book title.
+	get name() {
+		return this.bookTitle;
+	}
 
-  set name(name) {
-    this.bookTitle = name;
-  }
+	set name(name) {
+		this.bookTitle = name;
+	}
 
-  // getter and setter for book author.
-  get author() {
-    return this.bookAuthor;
-  }
+	// getter and setter for book author.
+	get author() {
+		return this.bookAuthor;
+	}
 
-  set author(author) {
-    this.bookAuthor = author;
-  }
+	set author(author) {
+		this.bookAuthor = author;
+	}
 
-  // getter and setter for book publish year.
-  get publishYear() {
-    return this.bookYear;
-  }
+	// getter and setter for book publish year.
+	get publishYear() {
+		return this.bookYear;
+	}
 
-  set publishYear(publishYear) {
-    this.bookYear = publishYear;
-  }
+	set publishYear(publishYear) {
+		this.bookYear = publishYear;
+	}
 
-  // Output method for Book format.
-  printInfo() {
-    console.log(
-      `Book "${this.bookTitle}" written by author ${this
-        .bookAuthor} was published in ${this.bookYear}.`
-    );
-  }
+	// Output method for Book format.
+	printInfo() {
+		console.log(
+			`Book "${this.bookTitle}" written by author ${
+				this.bookAuthor
+			} was published in ${this.bookYear}.`,
+		);
+	}
 
-  // Static method to find oldest book in books array.
-  static oldestBook(booksArray) {
-    console.log("The oldest book is:");
-    return booksArray.reduce(
-      (oldest, current) =>
-        oldest.publishYear < current.publishYear ? oldest : current
-    );
-  }
+	// Static method to find oldest book in books array.
+	static oldestBook(booksArray) {
+		console.log('The oldest book is:');
+		return booksArray.reduce((oldest, current) =>
+			oldest.publishYear < current.publishYear ? oldest : current,
+		);
+	}
 }

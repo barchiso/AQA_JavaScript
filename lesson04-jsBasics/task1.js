@@ -4,7 +4,7 @@
 // рядок, число, буль, null та undefined.
 // Присвойте їм значення та виведіть кожну змінну на консоль.
 
-const str = "Some text";
+const str = 'Some text';
 const num = 55;
 let isBool = true;
 let isNull = null;

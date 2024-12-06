@@ -6,11 +6,11 @@
 //  3. Виведіть отриману суму на консоль.
 
 //  Create function to sum of array elements.
-const sumNumbers = numbers => {
-  return numbers.reduce(
-    (accumulator, currentValue) => accumulator + currentValue,
-    0
-  );
+const sumNumbers = (numbers) => {
+	return numbers.reduce(
+		(accumulator, currentValue) => accumulator + currentValue,
+		0,
+	);
 };
 
 const numbers = [10, 20, 30, 40, 50];

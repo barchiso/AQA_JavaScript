@@ -16,30 +16,30 @@
 // Викличте його в коді передавши масив книг (серед них мають бути екземляри обох класів Book та EBook)
 // Створіть статичний метод для EBook який буде приймати як аргументи екземпляр класу Book і формат файлу як рядок ****та повертати екземпляр класу EBook
 
-import { Book } from "./Book.js";
-import { EBook } from "./EBook.js";
+import { Book } from './Book.js';
+import { EBook } from './EBook.js';
 
 // Books creation.
 const book1 = new Book(
-  "The Expanse. Leviathan Wakes",
-  "James S. A. Corey",
-  2011
+	'The Expanse. Leviathan Wakes',
+	'James S. A. Corey',
+	2011,
 );
 const book2 = new Book(
-  "The Witcher. Sword of Destiny",
-  "Andrzej Sapkowski",
-  1992
+	'The Witcher. Sword of Destiny',
+	'Andrzej Sapkowski',
+	1992,
 );
-const book3 = new Book("A Tale of Two Cities", "Charles Dickens", 1859);
+const book3 = new Book('A Tale of Two Cities', 'Charles Dickens', 1859);
 const book4 = new Book(
-  "Harry Potter and the Philosopher's Stone",
-  "J. K. Rowling",
-  1997
+	"Harry Potter and the Philosopher's Stone",
+	'J. K. Rowling',
+	1997,
 );
 const book5 = new Book(
-  "Alice's Adventures in Wonderland",
-  "Lewis Carroll",
-  1865
+	"Alice's Adventures in Wonderland",
+	'Lewis Carroll',
+	1865,
 );
 
 // Display books info.
@@ -50,8 +50,8 @@ book4.printInfo();
 book5.printInfo();
 
 // EBooks creation from Book.
-const eBook = EBook.createBook(book1, "EPUB");
-const eBook1 = EBook.createBook(book3, "EPUB");
+const eBook = EBook.createBook(book1, 'EPUB');
+const eBook1 = EBook.createBook(book3, 'EPUB');
 
 // Display Ebooks info.
 eBook.printInfo();

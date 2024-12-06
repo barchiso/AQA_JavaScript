@@ -13,12 +13,12 @@ const student = {}; // Create empty object student.
 student.firstName = String; // firstName: string, presents student's first name.
 student.lastName = String; // lastName: string, presents student's last name.
 student.age = Number; // age: number, presents student's age.
-student.courses = ["Math", "History", "Programming"]; // courses: Array, presents student's list of courses.
+student.courses = ['Math', 'History', 'Programming']; // courses: Array, presents student's list of courses.
 
 console.log(student);
 
-student.firstName = "Johnny"; // firstName: string, presents student's first name.
-student.lastName = "Bravo"; // lastName: string, presents student's last name.
+student.firstName = 'Johnny'; // firstName: string, presents student's first name.
+student.lastName = 'Bravo'; // lastName: string, presents student's last name.
 student.age = 23; // age: number, presents student's age.
 
 console.log(student);

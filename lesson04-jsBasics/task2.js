@@ -5,10 +5,10 @@
 // Виведіть результат в консоль. Потім використайте шаблонний рядок для створення того ж вітання.
 // Виведіть результат в консоль.
 
-const firstName = "John";
-const secondName = "Ashley";
+const firstName = 'John';
+const secondName = 'Ashley';
 
-const firstGreeting = "Hello, " + firstName + " and " + secondName + "!!!";
+const firstGreeting = 'Hello, ' + firstName + ' and ' + secondName + '!!!';
 console.log(firstGreeting);
 
 const secondGreeting = `Hello, ${firstName} and ${secondName}!!!`; // Press Fn+Esc on keyboard to enter ` symbol.

@@ -31,7 +31,7 @@ console.log(`Rectangle square equals: ${rectangleSquare}`); // Press Fn+Esc on k
 let cylinderRadius = 5;
 let cylinderHeight = 4;
 let cylinderVolume = (piNumber * cylinderRadius ** 2 * cylinderHeight).toFixed(
-  2
+	2,
 );
 
 console.log(`Cylinder volume equals: ${cylinderVolume}`); // Press Fn+Esc on keyboard to enter ` symbol.

@@ -5,7 +5,7 @@
 // створити 5 запитів за допомогою методів GET, POST
 // обов'язково має бути перевірка респонсу - response status, data на коректність згідно з документацією по АПІ
 
-const axios = require('axios');
+import axios from 'axios';
 
 describe(`JSONPlaceholder API`, () => {
 	describe(`Users requests`, () => {
@@ -20,7 +20,7 @@ describe(`JSONPlaceholder API`, () => {
 			);
 			console.log(response.data[0]);
 			expect(response.status).toEqual(200); // asserting if the response code is 200
-			expect(response.data.length).toBe(10); // asserting if the response data length to be 10
+			expect(response.data).toHaveLength(10); // asserting if the response data length to be 10
 			expect(response.data[0].id).toBe(1); // asserting if the response data id to be 1
 			expect(response.data[0].name).toBe('Leanne Graham'); // asserting if the response data name to be '<expected text>.'
 		});
@@ -55,7 +55,7 @@ describe(`JSONPlaceholder API`, () => {
 			);
 			console.log(response.data[0]);
 			expect(response.status).toEqual(200); // asserting if the response code is 200
-			expect(response.data.length).toBe(100); // asserting if the response data length to be 100
+			expect(response.data).toHaveLength(100); // asserting if the response data length to be 100
 			expect(response.data[0].userId).toBe(1); // asserting if the response data userId to be 1
 			expect(response.data[0].id).toBe(1); // asserting if the response data id to be 1
 			expect(response.data[0].title).toBe(
@@ -140,7 +140,7 @@ describe(`JSONPlaceholder API`, () => {
 			);
 			console.log(response.data[0]);
 			expect(response.status).toEqual(200); // asserting if the response code is 200
-			expect(response.data.length).toBe(20); // asserting if the response data length to be 200
+			expect(response.data).toHaveLength(20); // asserting if the response data length to be 200
 			expect(response.data[0].userId).toBe(1); // asserting if the response data userId to be 1
 			expect(response.data[0].id).toBe(1); // asserting if the response data id to be 1
 			expect(response.data[0].title).toBe('delectus aut autem'); // asserting if the response data title to be '<expected text>.'

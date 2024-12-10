@@ -13,5 +13,12 @@ export default [
 		//   'no-console': 'warn'
 		// },
 		// ignores: ['*/test.js']
+		// env: {
+		// 	jest: true, // Enables Jest globals
+		// },
+		plugins: ['jest'], // Add the Jest plugin
+		extends: [
+			'plugin:jest/recommended', // Use recommended Jest rules
+		],
 	},
 ];

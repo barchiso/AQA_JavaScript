@@ -23,23 +23,23 @@ const number = 10;
 console.log(`Таблиця множення числа ${number} використовуючи цикл 'for':`);
 
 for (let multiplier = 1; multiplier <= 10; multiplier++) {
-    console.log(`${number} x ${multiplier} = ${number * multiplier}`);
+	console.log(`${number} x ${multiplier} = ${number * multiplier}`);
 }
 
 console.log(`\nТаблиця множення числа ${number} використовуючи цикл 'while':`);
 
 let multiplier = 1;
 while (multiplier <= 10) {
-    console.log(`${number} x ${multiplier} = ${number * multiplier}`);
-    multiplier++;
+	console.log(`${number} x ${multiplier} = ${number * multiplier}`);
+	multiplier++;
 }
 
 console.log(`\nТаблиця множення чисел використовуючи цикли 'for' і 'while':`);
 for (let number = 1; number <= 10; number++) {
-    let multiplier = 1;
-    while (multiplier <= 10) {
-        console.log(`${number} x ${multiplier} = ${number * multiplier}`);
-        multiplier++;
-    }
-    console.log('');
+	let multiplier = 1;
+	while (multiplier <= 10) {
+		console.log(`${number} x ${multiplier} = ${number * multiplier}`);
+		multiplier++;
+	}
+	console.log('');
 }

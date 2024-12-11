@@ -11,22 +11,22 @@
 //  ShortLongShort.solution("22", "1"); // returns "1221"
 
 function solution(a, b) {
-    //  Using ternary conditional operator.
-    return a.length < b.length ? a + b + a : b + a + b; //  This is same as in commented if-else block
-    //  Using if...else, explicit block syntax
-    //   if (a.length < b.length) {
-    //     return a + b + a
-    //   } else {
-    //     return b + a + b
-    //   }
+	//  Using ternary conditional operator.
+	return a.length < b.length ? a + b + a : b + a + b; //  This is same as in commented if-else block
+	//  Using if...else, explicit block syntax
+	//   if (a.length < b.length) {
+	//     return a + b + a
+	//   } else {
+	//     return b + a + b
+	//   }
 
-    //  Using if..., implicit else, compressed syntax
-    //   if (a.length < b.length) return a + b + a
-    //   return b + a + b
+	//  Using if..., implicit else, compressed syntax
+	//   if (a.length < b.length) return a + b + a
+	//   return b + a + b
 
-    //  Using separate Arrow function and ternary conditional operator.
-    //   const shortLongShort = (a, b) =>
-    // 		a.length < b.length ? a + b + a : b + a + b
+	//  Using separate Arrow function and ternary conditional operator.
+	//   const shortLongShort = (a, b) =>
+	// 		a.length < b.length ? a + b + a : b + a + b
 }
 
 console.log(solution('1', '22'));
@@ -48,7 +48,7 @@ console.log(solution('-8', '-4'));
 //  Floats with decimal part non equal to zero are considered UNeven for this kata.
 
 function testEven(n) {
-    return n % 2 === 0;
+	return n % 2 === 0;
 }
 
 // Using separate Arrow function
@@ -77,17 +77,17 @@ console.log(isEven(0));
 
 //  Using function declaration.
 function rentalCarCost(d) {
-    if (d <= 0) {
-        return `You must rent more than one day`;
-    } else if (d < 3) {
-        return 40 * d;
-    } else if (d < 7) {
-        return 40 * d - 20;
-    } else if (d >= 7) {
-        return 40 * d - 50;
-    } else {
-        return `Number (integer) should be entered`;
-    }
+	if (d <= 0) {
+		return `You must rent more than one day`;
+	} else if (d < 3) {
+		return 40 * d;
+	} else if (d < 7) {
+		return 40 * d - 20;
+	} else if (d >= 7) {
+		return 40 * d - 50;
+	} else {
+		return `Number (integer) should be entered`;
+	}
 }
 console.log(rentalCarCost('some text'));
 console.log(rentalCarCost(-1));
@@ -99,11 +99,11 @@ console.log(rentalCarCost(100));
 
 //  Using function expression.
 const rentalCarCostExpression = function (d) {
-    if (d <= 0) return `You must rent more than one day`;
-    if (d < 3) return 40 * d;
-    if (d < 7) return 40 * d - 20;
-    if (d >= 7) return 40 * d - 50;
-    return `Number (integer) should be entered`;
+	if (d <= 0) return `You must rent more than one day`;
+	if (d < 3) return 40 * d;
+	if (d < 7) return 40 * d - 20;
+	if (d >= 7) return 40 * d - 50;
+	return `Number (integer) should be entered`;
 };
 
 console.log(rentalCarCostExpression('some text'));
@@ -117,15 +117,15 @@ console.log(rentalCarCostExpression(100));
 //  Using  Arrow function and ternary conditional operator.
 //  Not sure if it is good practice to use Arrow function and ternary conditional operator as solution for this task.
 const rentalCarCostArrow = (d) =>
-    d <= 0
-        ? `You must rent more than one day`
-        : d < 3
-          ? 40 * d
-          : d < 7
-            ? 40 * d - 20
-            : d >= 7
-              ? 40 * d - 50
-              : `Number (integer) should be entered`;
+	d <= 0
+		? `You must rent more than one day`
+		: d < 3
+			? 40 * d
+			: d < 7
+				? 40 * d - 20
+				: d >= 7
+					? 40 * d - 50
+					: `Number (integer) should be entered`;
 
 console.log(rentalCarCostArrow('some text'));
 console.log(rentalCarCostArrow(-1));

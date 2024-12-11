@@ -39,24 +39,24 @@ const averageGrade = 60;
 
 //  NEW: Optimized.
 switch (true) {
-    case averageGrade < 0 || averageGrade > 100:
-        console.log(`Оцінка не в діапазоні від 0 до 100.`);
-        break;
-    case averageGrade < 60:
-        console.log(`Незадовільно: ${averageGrade} балів.`);
-        break;
-    case averageGrade <= 70:
-        console.log(`Задовільно: ${averageGrade} балів.`);
-        break;
-    case averageGrade <= 80:
-        console.log(`Добре: ${averageGrade} балів.`);
-        break;
-    case averageGrade <= 90:
-        console.log(`Дуже добре: ${averageGrade} балів.`);
-        break;
-    case averageGrade <= 100:
-        console.log(`Відмінно: ${averageGrade} балів.`);
-        break;
-    default:
-        console.log(`Оцінка повинна бути числом.`);
+	case averageGrade < 0 || averageGrade > 100:
+		console.log(`Оцінка не в діапазоні від 0 до 100.`);
+		break;
+	case averageGrade < 60:
+		console.log(`Незадовільно: ${averageGrade} балів.`);
+		break;
+	case averageGrade <= 70:
+		console.log(`Задовільно: ${averageGrade} балів.`);
+		break;
+	case averageGrade <= 80:
+		console.log(`Добре: ${averageGrade} балів.`);
+		break;
+	case averageGrade <= 90:
+		console.log(`Дуже добре: ${averageGrade} балів.`);
+		break;
+	case averageGrade <= 100:
+		console.log(`Відмінно: ${averageGrade} балів.`);
+		break;
+	default:
+		console.log(`Оцінка повинна бути числом.`);
 }

@@ -3,15 +3,15 @@
 //  Note: Empty array should return 0.
 
 const getNumbersAverage = (numbersList) => {
-    if (numbersList.length === 0) return 0;
-    return Number(
-        (
-            numbersList.reduce(
-                (accumulator, currentValue) => accumulator + currentValue,
-                0,
-            ) / numbersList.length
-        ).toFixed(0),
-    );
+	if (numbersList.length === 0) return 0;
+	return Number(
+		(
+			numbersList.reduce(
+				(accumulator, currentValue) => accumulator + currentValue,
+				0,
+			) / numbersList.length
+		).toFixed(0),
+	);
 };
 
 let numbers = [12, 5, 20, 8, 15, 0, 25];
@@ -32,14 +32,14 @@ console.log('-'.repeat(50));
 //  [10, 343445353, 3453445, 3453545353453] should return 3453455.
 
 const sumTwoLowestPosition = (numbersList) => {
-    if (numbersList.length >= 4) {
-        const sortedNumbers = numbersList.sort(function (a, b) {
-            return a - b;
-        });
-        return sortedNumbers[0] + sortedNumbers[1];
-    } else {
-        return 'The array should have minimum 4 positive integers.';
-    }
+	if (numbersList.length >= 4) {
+		const sortedNumbers = numbersList.sort(function (a, b) {
+			return a - b;
+		});
+		return sortedNumbers[0] + sortedNumbers[1];
+	} else {
+		return 'The array should have minimum 4 positive integers.';
+	}
 };
 
 let integers = [19, 5, 42, 2, 77];
@@ -62,10 +62,10 @@ console.log('-'.repeat(50));
 //  Input data range guarantees that max-min will cause no integer overflow.
 
 const betweenExtremes = (numbersList) => {
-    const sortedNumbers = numbersList.sort(function (a, b) {
-        return a - b;
-    });
-    return sortedNumbers[sortedNumbers.length - 1] - sortedNumbers[0];
+	const sortedNumbers = numbersList.sort(function (a, b) {
+		return a - b;
+	});
+	return sortedNumbers[sortedNumbers.length - 1] - sortedNumbers[0];
 };
 
 let numArray = [23, 3, 19, 21, 16];

@@ -6,14 +6,14 @@
 
 //  Using function declaration.
 function rectangleSquare(width, height) {
-    return width * height;
+	return width * height;
 }
 
 console.log(rectangleSquare(5, 10));
 
 //  Using function expression.
 const rectangleSquareExpression = function (width, height) {
-    return width * height;
+	return width * height;
 };
 
 console.log(rectangleSquareExpression(5, 10));

@@ -2,7 +2,7 @@
 //  Напишіть тіло функції add що приймає два числа в якості параметрів та має повертати їх суму.
 
 function add(a, b) {
-	return a + b;
+    return a + b;
 }
 
 //  Using separate Arrow function
@@ -24,7 +24,7 @@ console.log(addArrow(-5, 5));
 //  Імплементуйте функцію isEven, яка приймає число і повертає true, якщо число парне, і false, якщо число непарне.
 
 function isEven(num) {
-	return num % 2 === 0;
+    return num % 2 === 0;
 }
 
 //  Using separate Arrow function
@@ -48,7 +48,7 @@ console.log(isEvenArrow(8.4));
 //  Напишіть тіло функції reverseString, яка приймає рядок і повертає його в зворотньому порядку.
 
 function reverseString(str) {
-	return Array.from(str).reverse().join('');
+    return Array.from(str).reverse().join('');
 }
 
 //  Using separate Arrow function

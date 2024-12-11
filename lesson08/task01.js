@@ -14,20 +14,20 @@
 
 // Create function to calculate quantity of  positive, negative and zero numbers.
 const countPositiveNegativeZeroNumbers = (numbers) => {
-	let positiveCount = 0;
-	let negativeCount = 0;
-	let zeroCount = 0;
+    let positiveCount = 0;
+    let negativeCount = 0;
+    let zeroCount = 0;
 
-	for (let i = 0; i < numbers.length; i++) {
-		const number = numbers[i];
-		if (number > 0) positiveCount++;
-		if (number < 0) negativeCount++;
-		if (number === 0) zeroCount++;
-	}
+    for (let i = 0; i < numbers.length; i++) {
+        const number = numbers[i];
+        if (number > 0) positiveCount++;
+        if (number < 0) negativeCount++;
+        if (number === 0) zeroCount++;
+    }
 
-	console.log(`Positive numbers: ${positiveCount}`);
-	console.log(`Negative numbers: ${negativeCount}`);
-	console.log(`Zero numbers: ${zeroCount}`);
+    console.log(`Positive numbers: ${positiveCount}`);
+    console.log(`Negative numbers: ${negativeCount}`);
+    console.log(`Zero numbers: ${zeroCount}`);
 };
 
 const numbersList = [2, -5, 0, 7, -3, 0, 10, -8];

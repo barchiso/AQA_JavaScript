@@ -9,13 +9,13 @@
 
 //  Using function declaration.
 function checkOrder(available, ordered) {
-	if (ordered === 0) {
-		return `Your order is empty.`;
-	} else if (ordered > available) {
-		return `Your order is too large, we don’t have enough goods.`;
-	} else {
-		return `Your order is accepted.`;
-	}
+    if (ordered === 0) {
+        return `Your order is empty.`;
+    } else if (ordered > available) {
+        return `Your order is too large, we don’t have enough goods.`;
+    } else {
+        return `Your order is accepted.`;
+    }
 }
 
 console.log(checkOrder(5, 0)); //  `Your order is empty.`
@@ -25,10 +25,10 @@ console.log(checkOrder(0, 2)); //  `Your order is too large, we don’t have eno
 
 //  Using function expression.
 const checkOrderExpression = function (available, ordered) {
-	if (ordered === 0) return `Your order is empty.`;
-	if (ordered > available)
-		return `Your order is too large, we don’t have enough goods.`;
-	return `Your order is accepted.`;
+    if (ordered === 0) return `Your order is empty.`;
+    if (ordered > available)
+        return `Your order is too large, we don’t have enough goods.`;
+    return `Your order is accepted.`;
 };
 
 console.log(checkOrderExpression(5, 0)); //  `Your order is empty.`
@@ -39,11 +39,11 @@ console.log(checkOrderExpression(0, 2)); //  `Your order is too large, we don’
 //  Using  Arrow function and ternary conditional operator.
 //  Not sure if it is good practice to use Arrow function and ternary conditional operator as solution for this task.
 const checkOrderArrow = (available, ordered) =>
-	ordered === 0
-		? `Your order is empty.`
-		: ordered > available
-			? `Your order is too large, we don’t have enough goods.`
-			: `Your order is accepted.`;
+    ordered === 0
+        ? `Your order is empty.`
+        : ordered > available
+          ? `Your order is too large, we don’t have enough goods.`
+          : `Your order is accepted.`;
 
 console.log(checkOrderArrow(5, 0)); //  `Your order is empty.`
 console.log(checkOrderArrow(5, 10)); //  `Your order is too large, we don’t have enough goods.`

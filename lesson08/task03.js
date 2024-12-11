@@ -7,10 +7,10 @@
 
 //  Create function to sum of array elements.
 const sumNumbers = (numbers) => {
-	return numbers.reduce(
-		(accumulator, currentValue) => accumulator + currentValue,
-		0,
-	);
+    return numbers.reduce(
+        (accumulator, currentValue) => accumulator + currentValue,
+        0,
+    );
 };
 
 const numbers = [10, 20, 30, 40, 50];

@@ -9,9 +9,9 @@
 // Виведіть оновлений об'єкт person в консоль.
 
 const person = {
-	firstName: String, // firstName: string, presents student's first name.
-	lastName: String, // lastName: string, presents student's last name.
-	age: Number, // age: number, presents student's age.
+    firstName: String, // firstName: string, presents student's first name.
+    lastName: String, // lastName: string, presents student's last name.
+    age: Number, // age: number, presents student's age.
 };
 
 person.firstName = 'Johnny'; // changing firstName property from string in person object.

@@ -19,7 +19,6 @@ export default [
 			'jest/prefer-to-have-length': 'warn',
 			'jest/valid-expect': 'error',
 			indent: ['error', 'tab'], // or use "tab" if you want to enforce tabs
-
 		},
 	},
 ];

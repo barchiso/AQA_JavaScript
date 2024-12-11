@@ -7,7 +7,7 @@
 
 //  Create function to  concatenate two arrays into one.
 const concatArrays = (firstArray, secondArray) => {
-  return firstArray.concat(secondArray);
+	return firstArray.concat(secondArray);
 };
 
 const children = ['Cecile', 'Lone', 'Emil', 'Tobias', 'Linus'];

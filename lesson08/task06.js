@@ -7,11 +7,11 @@
 
 //  Create function to sort array in ascending order.
 const sortedArray = (numbers) => {
-  // a - first element.
-  // b - second element.
-  return numbers.sort(function (a, b) {
-    return a - b;
-  });
+	// a - first element.
+	// b - second element.
+	return numbers.sort(function (a, b) {
+		return a - b;
+	});
 };
 
 const numbersList = [1, 10, 14, 2, 4, 5, 43, 34];

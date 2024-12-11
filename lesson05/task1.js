@@ -33,17 +33,17 @@ const averageGrade = 60;
 
 //  NEW: Optimized.
 if (averageGrade < 0 || averageGrade > 100) {
-  console.log(`Оцінка не в діапазоні від 0 до 100.`);
+	console.log(`Оцінка не в діапазоні від 0 до 100.`);
 } else if (averageGrade < 60) {
-  console.log(`Незадовільно: ${averageGrade} балів.`);
+	console.log(`Незадовільно: ${averageGrade} балів.`);
 } else if (averageGrade <= 70) {
-  console.log(`Задовільно: ${averageGrade} балів.`);
+	console.log(`Задовільно: ${averageGrade} балів.`);
 } else if (averageGrade <= 80) {
-  console.log(`Добре: ${averageGrade} балів.`);
+	console.log(`Добре: ${averageGrade} балів.`);
 } else if (averageGrade <= 90) {
-  console.log(`Дуже добре: ${averageGrade} балів.`);
+	console.log(`Дуже добре: ${averageGrade} балів.`);
 } else if (averageGrade <= 100) {
-  console.log(`Відмінно: ${averageGrade} балів.`);
+	console.log(`Відмінно: ${averageGrade} балів.`);
 } else {
-  console.log(`Оцінка повинна бути числом.`);
+	console.log(`Оцінка повинна бути числом.`);
 }

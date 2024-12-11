@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "jest",
 		"prepare": "husky && husky install",
-		"eslint:all": "npx eslint .",
+		"eslint:all": "npx eslint . --fix",
 		"prettier:fix": "npx prettier --write ."
 	},
 	"author": "",

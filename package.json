@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "jest",
+
 		"prepare": "husky && husky install",
 		"eslint:all": "npx eslint .",
 		"prettier:fix": "npx prettier --write ."

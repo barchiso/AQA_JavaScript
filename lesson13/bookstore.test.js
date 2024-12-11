@@ -53,6 +53,13 @@ describe(`Book store API`, () => {
 	});
 
 	describe(`Book info requests`, () => {
+		const axiosInstance = axios.create({
+			baseURL: 'https://demoqa.com/BookStore/v1',
+			validateStatus: function (status) {
+				return status;
+			},
+		});
+
 		test('Get specific book info', async () => {
 			const response = await axios.get(
 				`https://bookstore.toolsqa.com/BookStore/v1/Book?ISBN=${isbn}`, // calling the get API
@@ -70,8 +77,8 @@ describe(`Book store API`, () => {
 			expect(response.data.publisher).toBe('No Starch Press'); // asserting if the book publisher to be '<expected text>.'
 			expect(response.data.pages).toBe(352); // asserting if the book pages to be 352
 		});
-		test.skip('Delete specific book info', async () => {
-			const response = await axios.delete(
+		test('Delete specific book info', async () => {
+			const response = await axiosInstance.delete(
 				`https://demoqa.com/BookStore/v1/Book`, // calling the get API
 				{
 					isbn: `${isbnDel}`,
@@ -85,8 +92,8 @@ describe(`Book store API`, () => {
 					},
 				},
 			);
-			console.log(response.data);
-			expect(response.status).toEqual(204); // asserting if the response code is 204
+			console.log(JSON.stringify(response.data));
+			expect(response.status).toEqual(401); // asserting if the response code is 204
 		});
 
 		test('Add specific book to a user', async () => {

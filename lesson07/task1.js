@@ -11,17 +11,17 @@
 //  Create function handleNum which take three arguments:
 //  number, handleEven, handleOdd
 const handleNum = (number, handleEven, handleOdd) => {
-	number % 2 === 0 ? handleEven(number) : handleOdd(number);
+  number % 2 === 0 ? handleEven(number) : handleOdd(number);
 };
 
 //  Create function handleEven which display message 'number is even' into console.
 const handleEven = (number) => {
-	console.log(`Number ${number} is even`);
+  console.log(`Number ${number} is even`);
 };
 
 //  Create function handleOdd which display message 'number is odd' into console.
 const handleOdd = (number) => {
-	console.log(`Number ${number} is odd`);
+  console.log(`Number ${number} is odd`);
 };
 
 //  Call function with an arguments

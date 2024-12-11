@@ -20,33 +20,33 @@ import { Book } from './Book.js';
 
 // class EBook inherited from class Books.
 export class EBook extends Book {
-	constructor(name, author, publishYear, format) {
-		super(name, author, publishYear);
-		this.bookFormat = format;
-	}
+  constructor(name, author, publishYear, format) {
+    super(name, author, publishYear);
+    this.bookFormat = format;
+  }
 
-	// getter and setter for book format.
-	get format() {
-		return this.bookFormat;
-	}
+  // getter and setter for book format.
+  get format() {
+    return this.bookFormat;
+  }
 
-	set format(format) {
-		this.bookFormat = format;
-	}
+  set format(format) {
+    this.bookFormat = format;
+  }
 
-	// Output method for EBook format.
-	printInfo() {
-		console.log(
-			`Book "${this.bookTitle}" written by author ${
-				this.bookAuthor
-			} was published in ${
-				this.bookYear
-			} and has book format: "${this.bookFormat}".`,
-		);
-	}
+  // Output method for EBook format.
+  printInfo() {
+    console.log(
+      `Book "${this.bookTitle}" written by author ${
+        this.bookAuthor
+      } was published in ${
+        this.bookYear
+      } and has book format: "${this.bookFormat}".`,
+    );
+  }
 
-	// Static method to create EBook from Book.
-	static createBook(book, format) {
-		return new EBook(book.name, book.author, book.publishYear, format);
-	}
+  // Static method to create EBook from Book.
+  static createBook(book, format) {
+    return new EBook(book.name, book.author, book.publishYear, format);
+  }
 }

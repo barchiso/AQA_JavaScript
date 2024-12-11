@@ -6,7 +6,7 @@
 
 //  Using function declaration.
 function isAdult(age) {
-	return age >= 18;
+  return age >= 18;
 }
 
 console.log(isAdult(25));
@@ -16,7 +16,7 @@ console.log(isAdult(17.5));
 
 //  Using function expression.
 const isAdultExpression = function (age) {
-	return age >= 18;
+  return age >= 18;
 };
 
 console.log(isAdultExpression(25));

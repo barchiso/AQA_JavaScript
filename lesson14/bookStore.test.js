@@ -1,3 +1,8 @@
+// Домашнє завдання:(замість дефолтного) - Додати контролери до API тестів
+// Створити нову гілку
+// Використовувати тести з минулої домашки(API запити до JSONPlaceholder) АБО Створити 5-10 нових тестів до сервісу https://bookstore.toolsqa.com/swagger/#/
+// У тестах робити перевірки через expect
+// Використовувати контролери у тестах
 // Написати 5 тестів на API сервісу
 // https://demoqa.com/books
 // https://bookstore.toolsqa.com/swagger/
@@ -77,6 +82,7 @@ describe(`Book store API`, () => {
       expect(response.data.publisher).toBe('No Starch Press'); // asserting if the book publisher to be '<expected text>.'
       expect(response.data.pages).toBe(352); // asserting if the book pages to be 352
     });
+
     test('Delete specific book info', async () => {
       const response = await axiosInstance.delete(
         `https://demoqa.com/BookStore/v1/Book`, // calling the get API

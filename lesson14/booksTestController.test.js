@@ -206,7 +206,7 @@ describe('Adding and removing books', () => {
 	});
 });
 
-describe.skip('User deletion', () => {
+describe('User deletion', () => {
 	test('Delete user', async () => {
 		const response = await AccountController.deleteUser(userId, token);
 		console.log(response.data);
